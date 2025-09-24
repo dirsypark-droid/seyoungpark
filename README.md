@@ -1,6 +1,7 @@
 # Hi, I'm Seyoung Park – Technical Writer
 
 I create clear, developer-friendly docs: APIs, tutorials, and product guides.
+I write in both English and Korean for global audiences.
 
 **Portfolio highlights**
 - API reference (mock service)
