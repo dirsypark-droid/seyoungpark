@@ -168,7 +168,7 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
         "cat": {
           "catId": 82275455,
           "name": "들기름/참기름", // 카테고리명
-          "brandName": "농부미학", // 없을 수 있음(null)
+          "brandName": "농부미학", // 값이 없을 경우 null
           "attributes": [
             { "key": "용량", "value": "350", "unit": "ml" },
             { "key": "개수", "value": "1", "unit": "개" }
