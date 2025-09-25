@@ -38,13 +38,13 @@
 
 | 필드      | 타입   |   필수   | 설명                                                                                                                                         |
 | --------- | ------ | ------- | ------------------------------------------------------------------------------------------------------ |
-| code      | string | ✔    | 에러 코드 (`MISSING_PARAMETER`, `INVALID_PARAMETER`, `OUT_OF_RANGE`, `NOT_FOUND`, `DUPLICATE_ID`, `TOO_MANY_IDS`, `IDEMPOTENCY_CONFLICT` 등) |
-| message   | string | ✔    | 오류 메시지(요청 언어 우선)                                                                                                                  |
-| field     | string |      | 문제가 된 필드명(가능한 경우)                                                                                                                |
-| expected  | object |      | 기대 스키마 일부(타입/범위/패턴 등)                                                                                                          |
-| actual    | object |      | 실측 타입/값 요약                                                                                                                            |
-| requestId | string |      | 서버 로그 상호 참조용 식별자                                                                                                                 |
-| locale    | string |      | 메시지 언어 코드(예: `ko-KR`, `en-US`)                                                                                                       |
+| code      | string |   ✔    | 에러 코드 (`MISSING_PARAMETER`, `INVALID_PARAMETER`, `OUT_OF_RANGE`, `NOT_FOUND`, `DUPLICATE_ID`, `TOO_MANY_IDS`, `IDEMPOTENCY_CONFLICT` 등) |
+| message   | string |   ✔    | 오류 메시지(요청 언어 우선)                                                                                                                  |
+| field     | string |        | 문제가 된 필드명(가능한 경우)                                                                                                                |
+| expected  | object |        | 기대 스키마 일부(타입/범위/패턴 등)                                                                                                          |
+| actual    | object |        | 실측 타입/값 요약                                                                                                                            |
+| requestId | string |        | 서버 로그 상호 참조용 식별자                                                                                                                 |
+| locale    | string |        | 메시지 언어 코드(예: `ko-KR`, `en-US`)                                                                                                       |
 
 ---
 
