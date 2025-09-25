@@ -10,12 +10,11 @@ I create professional documentation in **English and Korean**, including APIs, t
 ## 📖 Documentation (`docs/`)
 - [Home](./docs/index.md)
 - [About Me](./docs/about.md)
-- [Resume](./docs/resume.md)
 - **Samples**
-  - [API Reference](./docs/samples/api-reference/index.md)
-  - [Quickstart Tutorial](./docs/samples/tutorial-quickstart/index.md)
+  - [API Reference - Korean](./docs/samples/api-reference/index.md)
+  - [Quickstart Tutorial - English](./docs/samples/tutorial-quickstart/index.md)
   - [Concept Explainer](./docs/samples/concept-explainer/index.md)
-  - [Release Notes](./docs/samples/release-notes/index.md)
+  - [UX writing](./docs/samples/ux-writing/index.md)
 
 ---
 
@@ -25,7 +24,7 @@ I create professional documentation in **English and Korean**, including APIs, t
 ---
 
 ## ℹ️ Repo Info
-This repository is structured as a **documentation portfolio**.  
+This repository is structured as a **documentation portfolio**.
 Visit the [GitHub Pages site](./docs/index.md) to view it as a live website.
 
 📫 Contact: dir.sypark@gmail.com
