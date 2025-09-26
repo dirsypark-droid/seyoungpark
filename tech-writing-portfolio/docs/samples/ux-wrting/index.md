@@ -16,7 +16,6 @@
 ### Before - UX 이슈
 
 - 화면 목적 불명확: 클라우드 계정 연결 화면이라는 점이 직관적으로 드러나지 않음
-- 정보 미노출: Cross-Account Access / IAM Access Key 탭 아래 ACCOUNT NAME, ACCOUNT ID 등 필드명이 있으나 값이 표시되지 않아 혼란 발생
 - 단어 이해 어려움: Manually vs Automatically 차이를 쉽게 구분하기 어려움
 - 비직관적 동사 사용: Creating 대신 Create와 같은 명령형이 더 직관적임
 - 버튼/링크 표현 부족: See how to create role ARN automatically in AWS → 문장이 장황하고 버튼처럼 보이지 않음
@@ -24,9 +23,10 @@
 ### After - UX 개선 사항
 
 - 목적 명확화: 화면 상단에 클라우드 계정 연결이라는 목적을 명시함
-- 숙련 사용자 배려: 프로세스에 익숙한 사용자가 가이드를 거치지 않고 빠르게 정보를 입력할 수 있는 옵션 제공(Step by Step/Immediately)
-- 간결하고 직관적인 언어: 기존 직역투 문구를 개선하여 짧고 이해하기 쉬운 문장 사용
-- 명령형 동사 사용: Create, Connect 등 명령형을 활용해 가독성 개선
+- 숙련 사용자 배려: 프로세스에 익숙한 사용자가 가이드를 거치지 않고 빠르게 정보를 입력할 수 있는 옵션(Step by Step/Immediately)을 제공하고 직관적인 표현을 사용함
+- 간결하고 직관적인 언어: 기존 직역투 문구를 개선하여 짧고 이해하기 쉬운 문장을 사용함
+- 명령형 동사 사용: Create, Connect 등 명령형을 활용해 가독성을 개선함
+
 
 
 
