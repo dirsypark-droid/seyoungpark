@@ -7,6 +7,7 @@ Base URL: `https://tech-writer-syp.com/v1`
 
 - [Overview](#overview)
 - [Common Conventions](#common-conventions)
+- [Validation Rules](#validation-rules)
 - [Authentication & Headers](#authentication--headers)
   - [Required headers](#required-headers)
   - [Rate limit headers](#rate-limit-headers)
@@ -24,13 +25,10 @@ Base URL: `https://tech-writer-syp.com/v1`
     - [200 OK](#200-ok상품-조회-성공)
     - [200 Partial Success](#200-partial-success부분-성공)
     - [400 Base Request](#400-base-request검증-실패중복)
-- [국제화(i18n)](#국제화i18n)
-- [검증 규칙 요약](#검증-규칙-요약)
 - [기타 에러 객체](#기타-에러-객체)
   - [필수 누락](#필수-누락)
   - [범위 초과](#범위-초과)
   - [패턴 불일치](#패턴-불일치)
-
 
 ---
 
