@@ -5,19 +5,16 @@
 ### Context
 
 - 신규 사용자가 직후 서비스를 시작할 수 있도록 기존의 클라우드 계정 등록 화면을 온보딩 화면에 배치함
-- 복잡한 클라우드 계정 등록 과정을 보다 직관적으로 개편함
+- 복잡한 클라우드 계정 등록 화면을 보다 직관적으로 개편함
 
-### Before
-![before](../../assets/aws_before.jpg)
-
-
-### After
-![after](../../assets/aws_after.jpg)
-
+| Before | After |
+|--------|-------|
+| ![Before](../../assets/aws_before.jpg) | ![After](../../assets/aws_after.jpg) |
 
 
 
 ---
+
 
 
 
