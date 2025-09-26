@@ -36,7 +36,7 @@ Base URL: `https://tech-writer-syp.com/v1`
 
 # Overview
 
-Commerce Public API는상품과 카테고리 등의 상거래 리소스를 조회/등록하기 위한 HTTP+JSON API 입니다.
+Commerce Public API는 상품과 카테고리 등의 상거래 리소스를 조회/등록하기 위한 HTTP+JSON API 입니다.
 
 ---
 
