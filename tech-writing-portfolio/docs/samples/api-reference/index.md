@@ -5,8 +5,6 @@ Base URL: `https://tech-writer-syp.com/v1`
 ---
 # Quick Navigation
 
-## Quick Navigation
-
 - [Overview](#overview)
 - [Common Conventions](#common-conventions)
 - [Authentication & Headers](#authentication--headers)
