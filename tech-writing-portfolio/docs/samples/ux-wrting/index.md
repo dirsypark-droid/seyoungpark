@@ -8,14 +8,15 @@
 - 복잡한 클라우드 계정 등록 과정을 보다 직관적으로 개편함
 
 ### Before
-![Before][../../assets/aws_before.jpg]
+![before][../../assets/aws_before.jpg]
 
 
 ### After
-![After](../../assets/aws_after.jpg)
+![after](../../assets/aws_after.jpg)
 
 
 
 
 ---
+
 
