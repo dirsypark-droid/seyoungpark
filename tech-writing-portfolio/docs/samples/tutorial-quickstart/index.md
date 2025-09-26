@@ -10,7 +10,7 @@
   - [Verify your settings](#verify-your-settings)
 - [Start a new project](#start-a-new-project)
 - [Add and commit your first file](#add-and-commit-your-first-file)
-- [Connect to GitHub and Push](#connect-to-github-and-push)
+- [Connect to GitHub](#connect-to-github)
   - [Create a new repository on GitHub](#create-a-new-repository-on-github)
 - [Add the remote repository](#add-the-remote-repository)
 - [Push to GitHub](#push-to-github)
@@ -209,7 +209,7 @@ Example output
 
 ---
 
-## Connect to GitHub and Push
+## Connect to GitHub
 
 ### Create a new repository on GitHub
 
@@ -295,4 +295,5 @@ To https://github.com/your-username/my-first-git.git
 
 Your project has now been uploaded to GitHub.
 You can confirm by visiting `https://github.com/your-username/my-first-git` in your browser.
+
 
