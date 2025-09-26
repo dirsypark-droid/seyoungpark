@@ -3,7 +3,7 @@
 # 📚 Tech Writing Portfolio
 
 Welcome to my technical writing portfolio.  
-I create professional documentation in **English and Korean**, including APIs, tutorials, explainers, and release notes.
+I create professional documentation in **English and Korean**, including APIs, tutorials, and explainers.
 
 ---
 
