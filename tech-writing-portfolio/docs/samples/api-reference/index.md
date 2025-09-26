@@ -272,14 +272,6 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
 
 ---
 
-# 국제화(i18n)
-
-- `Accept-Language` 요청 헤더로 오류 메시지 언어를 결정(기본: 한국어)합니다.
-
-- 예: `Accept-Language: en` → 영어 메시지가 반환됩니다.
-
----
-
 # 검증 규칙 요약
 
 - **name**: 1–255, 정규식 `^[A-Za-z0-9 _\-:\.^@]+$` (공백 허용), 허용문자 외 금지
