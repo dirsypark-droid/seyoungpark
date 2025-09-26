@@ -1,5 +1,22 @@
 # Git Tutorial: From Installation to Push
 
+## Quick Navigation
+
+- [What is Git?](#what-is-git)
+- [Install Git](#install-git)
+  - [Windows](#windows)
+  - [macOS](#macos)
+- [Configure your identity](#configure-your-identity)
+  - [Verify your settings](#verify-your-settings)
+- [Start a new project](#start-a-new-project)
+- [Add and commit your first file](#add-and-commit-your-first-file)
+- [Connect to GitHub and Push](#connect-to-github-and-push)
+  - [Create a new repository on GitHub](#create-a-new-repository-on-github)
+- [Add the remote repository](#add-the-remote-repository)
+- [Push to GitHub](#push-to-github)
+- [✅ Completed](#-completed)
+
+
 ## What is Git?
 
 Git is the most widely used **Version Control System (VCS)** among developers around the world.
@@ -278,3 +295,4 @@ To https://github.com/your-username/my-first-git.git
 
 Your project has now been uploaded to GitHub.
 You can confirm by visiting `https://github.com/your-username/my-first-git` in your browser.
+
