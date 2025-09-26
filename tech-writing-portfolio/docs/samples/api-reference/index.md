@@ -1,50 +1,51 @@
 # Commerce Public API v1
 
-- Base URL: `https://tech-writer-syp.com/v1`
+Base URL: `https://tech-writer-syp.com/v1`
 
-- Auth: `Authorization: Bearer <token>`
+---
+# Quick Navigation
 
-- Content-Type: `application/json; charset=utf-8`
 
-- Idempotency: `Idempotency-Key: <uuid>` (POST 시 권장)
+---
 
-- Rate Limit: 응답 헤더 `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset`
+# Overview
 
-# 공통 규칙
+Commerce Public API는상품과 카테고리 등의 상거래 리소스를 조회/등록하기 위한 HTTP+JSON API 입니다.
 
-- 시간은 **UTC ISO 8601**(`YYYY-MM-DDTHH:mm:ssZ`) 사용
+---
 
-- URL은 `format: uri` (이미지/링크 등)
+# Common Conventions 
 
-- 한글 메시지 기본, `Accept-Language: en` 등으로 다국어(선택) 지원
+- **Time**: UTC ISO 8601 (`YYYY-MM-DDTHH:mm:ssZ`)
 
-- 모든 에러는 **표준 에러 객체**로 반환
+- URIs: `format: uri` (이미지/링크 등)
 
-# 에러 객체(표준)
+- Language: 기본 한국어. `Accept-Language`로 다국어 메시지 요청 가능
 
-```json
-{
-  "error": {
-    "code": "INVALID_PARAMETER",
-    "message": "\"price\"는 정수여야 합니다.",
-    "field": "price",
-    "expected": { "type": "integer", "minimum": 0, "maximum": 1000000000 },
-    "actual": { "type": "string" },
-    "requestId": "req_7fd2d4f2",
-    "locale": "ko-KR"
-  }
-}
-```
+- Idempotency: 재시도 안전을 위해 POST 시 `Idempotency-Key: <uuid>` 헤더 권장
 
-| 필드      | 타입   |   필수   | 설명                                                                                                                                         |
-| --------- | ------ | ------- | ------------------------------------------------------------------------------------------------------ |
-| code      | string |   ✔    | 에러 코드 (`MISSING_PARAMETER`, `INVALID_PARAMETER`, `OUT_OF_RANGE`, `NOT_FOUND`, `DUPLICATE_ID`, `TOO_MANY_IDS`, `IDEMPOTENCY_CONFLICT` 등) |
-| message   | string |   ✔    | 오류 메시지(요청 언어 우선)                                                                                                                  |
-| field     | string |        | 문제가 된 필드명(가능한 경우)                                                                                                                |
-| expected  | object |        | 기대 스키마 일부(타입/범위/패턴 등)                                                                                                          |
-| actual    | object |        | 실측 타입/값 요약                                                                                                                            |
-| requestId | string |        | 서버 로그 상호 참조용 식별자                                                                                                                 |
-| locale    | string |        | 메시지 언어 코드(예: `ko-KR`, `en-US`)                                                                                                       |
+- Content Type: `application/json; charset=utf-8`
+
+---
+
+# Authentication & Headers
+
+## Required headers
+
+| Header            | Required     | Example                                      | Purpose                          |
+|-------------------|--------------|----------------------------------------------|----------------------------------|
+| Authorization     | ✔            | Bearer `<token>`                             | OAuth2 Bearer 토큰                |
+| Content-Type      | ✔            | application/json; charset=utf-8              | JSON 전송                         |
+| Idempotency-Key   | (POST 권장)  | c9f0c6e4-6fc0-4c56-8b2f-6e8b7b0f1c32         | 멱등 보장(같은 키+페이로드=단일 결과) |
+| Accept-Language   | 선택         | en, ko-KR                                    | 오류/시스템 메시지의 언어 요청    |
+
+## Rate limit headers
+
+| Header                | Type     | Meaning                     |
+|------------------------|----------|-----------------------------|
+| `X-RateLimit-Limit`    | response | 현재 윈도우의 총 허용 횟수   |
+| `X-RateLimit-Remaining`| response | 남은 호출 가능 횟수          |
+| `X-RateLimit-Reset`    | response | 윈도우 초기화 UNIX epoch(초) |
 
 ---
 
@@ -245,39 +246,11 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
 
 ---
 
-# 인증(Authorization)
-
-- 모든 요청에 `Authorization: Bearer <token>` 필요
-
-- 잘못된 토큰: `401 Unauthorized`
-
-- 권한 부족: `403 Forbidden`
-
----
-
 # 국제화(i18n)
 
-- `Accept-Language` 요청 헤더로 오류 메시지 언어 결정(기본: 한국어)
+- `Accept-Language` 요청 헤더로 오류 메시지 언어를 결정(기본: 한국어)합니다.
 
-- 예: `Accept-Language: en` → 영어 메시지 반환
-
----
-
-# 페이징/성능(해당 시)
-
-- 배치 조회 시 **ID 개수 제한**(예: 최대 10,000)
-
-- 필요한 경우 필드 선택을 위한 `fields` 쿼리/바디 옵션 제공 고려(예: `fields=cat,primaryItem`)
-
----
-
-# 변경 관리(버전/폐기)
-
-- 경로 버전 사용: `/v1/...`
-
-- 호환 깨지는 변경은 **메이저 버전**으로 승격(`/v2`)
-
-- 폐기 예정 필드는 문서에 `Deprecated` 표기 및 **Sunset 날짜** 공지
+- 예: `Accept-Language: en` → 영어 메시지가 반환됩니다.
 
 ---
 
@@ -295,7 +268,10 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
 
 ---
 
-# 실패 케이스 예시 모음
+# 기타 에러 객체
+
+본문에서 다룬 에러 객체 외 추가로 참고할 수 있는 에러 객체입니다.
+
 
 ## 필수 누락
 
