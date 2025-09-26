@@ -231,7 +231,7 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
 }
 ```
 
-400 Base Request(중복/검증 실패)
+### 400 Base Request(검증 실패/중복)
 
 ```json
 {
