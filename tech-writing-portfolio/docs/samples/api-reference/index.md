@@ -54,6 +54,15 @@ Commerce Public API는 상품과 카테고리 등의 상거래 리소스를 조�
 
 ---
 
+# Validation Rules
+- **name**: 1–255, 정규식 `^[A-Za-z0-9 _\-:\.^@]+$` (공백 허용), 허용문자 외 금지
+- **price/stock**: 정수, 0–1,000,000,000 (0이면 품절)
+- **description**: 1–2,000(선택)
+- **thumbnailUrl**: `format: uri`, nullable
+- **createdAt**: ISO 8601(UTC, `Z`)
+
+---
+
 # Authentication & Headers
 
 ## Required headers
@@ -269,21 +278,6 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
   }
 }
 ```
-
----
-
-# 검증 규칙 요약
-
-- **name**: 1–255, 정규식 `^[A-Za-z0-9 _\-:\.^@]+$` (공백 허용), 허용문자 외 금지
-
-- **price/stock**: 정수, 0–1,000,000,000 (0이면 품절)
-
-- **description**: 1–2,000(선택)
-
-- **thumbnailUrl**: `format: uri`, nullable
-
-- **createdAt**: ISO 8601(UTC, `Z`)
-
 ---
 
 # 기타 에러 객체
