@@ -53,7 +53,7 @@ REST는 **Representational State Transfer**의 줄임말로, 다음과 같은 �
 - **DELETE /products/123**  
   → ID 123번 상품 삭제하기
 
-  ## API vs. REST API
+## API vs. REST API
 
 | 구분 | API | REST API |
 |------|-----|-----------|
