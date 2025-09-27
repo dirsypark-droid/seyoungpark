@@ -19,7 +19,7 @@ I create professional documentation in **English and Korean**, including APIs, t
 ---
 
 ## 🖼 Assets (`assets/`)
-- [Images folder](./assets/images) – supporting diagrams, screenshots, and visuals used in docs.
+- [Images folder](./assets) – supporting diagrams, screenshots, and visuals used in docs.
 
 ---
 
