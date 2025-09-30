@@ -1,5 +1,7 @@
 # API란?
 
+![API](../../assets/api-gen.jpg)
+
 ## 개요
 
 API(Application Programming Interface)는 애플리케이션(프로그램)끼리 서로 소통할 수 있도록 만든 규칙입니다.
@@ -14,6 +16,8 @@ API(Application Programming Interface)는 애플리케이션(프로그램)끼리
 ---
 
 # REST API란?
+
+![REST API](../../assets/rest-api.jpg)
 
 ## 개요
 
