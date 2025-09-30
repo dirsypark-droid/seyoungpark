@@ -3,13 +3,13 @@
 ## 개요
 
 API(Application Programming Interface)는 애플리케이션(프로그램)끼리 서로 소통할 수 있도록 만든 규칙입니다.
-웹, 앱, OS, HW 등 다양한 환경에서 사용되며, API를 통해 복잡한 내부 구조를 모두 파악하지 않고도 기능을 활용할 수 있습니다.
+웹, 앱, OS, HW 등 다양한 환경에서 사용되며, API를 통해 애플리케이션의 복잡한 내부 구조를 모두 파악하지 않고도 기능을 활용할 수 있습니다.
 
 ## API 사용 예시
 
-- **Windows 파일 API**: 다른 앱에서 파일을 열고 저장할 수 있음
-- **카메라 API**: 앱에서 스마트폰 카메라를 실행할 수 있음
-- **Google 맵 API**: 앱에서 지도/위치 서비스를 사용할 수 있음
+- **Windows 파일 API**: 다른 앱에서 파일을 열고 저장
+- **카메라 API**: 앱에서 스마트폰 카메라 실행
+- **Google 맵 API**: 앱에서 지도/위치 서비스 사용
 
 ---
 
@@ -34,10 +34,10 @@ REST는 **Representational State Transfer**의 줄임말로, 다음과 같은 �
      - `/orders/25` → 주문 번호 25번  
 
 2. **HTTP 메서드 활용**  
-   - `GET` → 조회  
-   - `POST` → 생성  
-   - `PUT`/`PATCH` → 수정  
-   - `DELETE` → 삭제  
+   - `GET` → 조회(Create)
+   - `POST` → 생성(Read)
+   - `PUT`/`PATCH` → 수정(Update) 
+   - `DELETE` → 삭제(Delete)
 
 3. **무상태성 (Stateless)**  
    - 서버는 이전 요청의 상태를 기억하지 않습니다.  
