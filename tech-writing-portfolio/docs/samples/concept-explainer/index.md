@@ -64,3 +64,14 @@ REST는 **Representational State Transfer**의 줄임말로, 다음과 같은 �
 | 개념 범위 | 프로그램 간 소통을 위한 모든 규칙 | API 중 REST 원칙을 지키며 HTTP로 통신하는 방식 |
 | 사용 환경 | OS, 라이브러리, 앱, 웹, 하드웨어 전반 | 주로 웹(HTTP 기반) |
 | 예시 | 카메라 API, 결제 API, 구글 맵 API | `GET /users`, `POST /orders` |
+
+---
+
+# 참고 자료
+
+- [AWS: API란 무엇인가?](https://aws.amazon.com/ko/what-is/api/)  
+- [YouTube: APIs Explained in 6 Minutes](https://www.youtube.com/watch?v=hltLrjabkiY)  
+- [MDN Web Docs: Introduction to APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)  
+- [Google Cloud: What is an API?](https://cloud.google.com/learn/what-is-an-api)  
+- [Microsoft Docs: What is an API?](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/api-design)  
+- [REST API Tutorial](https://restfulapi.net/)  
