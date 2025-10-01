@@ -83,8 +83,8 @@ REST는 다음과 같은 원칙을 따릅니다.
 
    ```http
    GET /users/1 HTTP/1.1
-Host: api.example.com
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+   Host: api.example.com
+   Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
    ```
   
 4.  **클라이언트-서버 구조**
