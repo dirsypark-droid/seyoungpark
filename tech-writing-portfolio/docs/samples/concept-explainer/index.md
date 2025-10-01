@@ -61,7 +61,8 @@ Accept: application/json
 
 ```
 
-2. **HTTP 메서드 활용**  
+2. **HTTP 메서드 활용**
+
    - `GET` → 조회(Create)
 
 ```http
