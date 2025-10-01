@@ -1,17 +1,15 @@
 # API란?
 
-![API](../../assets/api-gen.jpg)
-
 ## 개요
 
 API(Application Programming Interface)는 애플리케이션(프로그램)끼리 서로 소통할 수 있도록 만든 규칙입니다.
-웹, 앱, OS, HW 등 다양한 환경에서 사용되며, API를 통해 애플리케이션의 복잡한 내부 구조를 모두 파악하지 않고도 기능을 활용할 수 있습니다.
+웹, 앱, 운영체제, 하드웨어 등 다양한 환경에서 사용되며, API를 통해 애플리케이션의 복잡한 내부 구조를 모두 파악하지 않고도 기능을 활용할 수 있습니다.
 
 ## API 사용 예시
 
-- **Windows 파일 API**: 다른 앱에서 파일을 열고 저장
 - **카메라 API**: 앱에서 스마트폰 카메라 실행
 - **Google 맵 API**: 앱에서 지도/위치 서비스 사용
+- **Windows 파일 API**: 다른 앱에서 파일을 열고 저장
 
 ---
 
@@ -68,47 +66,7 @@ REST는 다음과 같은 원칙을 따릅니다.
    GET /orders/25 HTTP/1.1
    Host: api.example.com
    ```
-   - `POST` → 생성(Read)
-   ```http
-   POST /orders HTTP/1.1
-   Host: api.example.com
-   Content-Type: application/json
-
-   {
-     "productId": 123,
-     "quantity": 2
-   }
-   ```
-   - `PUT`/`PATCH` → 수정(Update)
-   ```http
-   PUT /orders/25 HTTP/1.1
-   Host: api.example.com
-   Content-Type: application/json
-
-   {
-     "quantity": 3
-   }
-   ```
-   - `DELETE` → 삭제(Delete)
-   ```http
-   DELETE /orders/25 HTTP/1.1
-   Host: api.example.com
-   ```
-
-2. **무상태성**  
-   - 서버는 클라이언트의 상태(세션 등)를 저장하지 않습니다.  
-   - 각 요청은 독립적이며, 필요한 정보는 요청에 모두 포함해야 합니다.
-
-   예: 요청 시 인증 토큰 함께 전송
-   ```http
-   GET /users/1 HTTP/1.1
-   Host: api.example.com
-   Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-   ```
-
-3. **클라이언트-서버 구조**
-   - 클라이언트와 서버의 역할을 명확히 분리하여 확장성과 유지보수성을 향상합니다.
-   - 클라이언트는 UI/사용자 경험 담당, 서버는 데이터 저장/처리를 담당합니다.
+   - `POST` → 생성(Rea을, 서버는 데이터 저장/처리를 담당합니다.
 
    서버 응답 예시(JSON) - 데이터 담당
    ```json
@@ -129,7 +87,7 @@ REST는 다음과 같은 원칙을 따릅니다.
      });
    ```
   
-4. **캐시 가능성**
+3. **캐시 가능성**
    - 서버 응답은 캐시 가능해야 하며, 캐시 가능 여부를 명시해야 하며, 이를 통해 성능을 개선하고 네트워크 트래픽 감소 효과를 얻습니다.
    - 예: `Cache-Control` 헤더로 응답이 캐시 가능한지, 유효기간은 언제까지인지 명시
 
@@ -150,7 +108,7 @@ REST는 다음과 같은 원칙을 따릅니다.
 
    > **참고**: 캐시(Cache)란 한 번 가져운 데이터를 잠시 저장해 두었다가, 같은 요청이 또 들어오면 다시 서버를 거치지 않고 저장한 데이터를 재사용하는 것을 말합니다.
 
-6. **계층화 시스템**
+4. **계층화 시스템**
    - 서버는 여러 계층(로드밸런서, 프록시, 게이트웨이 등)으로 구성될 수 있으며, 클라이언트는 중간 계층의 존재를 알 필요가 없습니다.
    - 보안, 로드 분산, 정책 관리 등을 계층에서 처리할 수 있습니다.
 
@@ -164,7 +122,7 @@ REST는 다음과 같은 원칙을 따릅니다.
    Client → Load Balancer → API Gateway → Application Server → Database
    ```
 
-7. **코드 온 디맨드(선택적)**
+5. **코드 온 디맨드(선택적)**
    - 필요 시 서버가 클라이언트에 코드를 전송해 실행할 수 있습니다.
    - 예: 이메일 형식 검사, 비밀번호 규칙 검사 
 
