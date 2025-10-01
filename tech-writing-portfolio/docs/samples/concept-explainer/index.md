@@ -51,7 +51,6 @@ Accept: application/json
 ```
 
 응답 예시(JSON)
-
 ```json
 
 {
@@ -99,7 +98,8 @@ Host: api.example.com
 2. **무상태성**  
    - 서버는 클라이언트의 상태(세션 등)를 저장하지 않습니다.  
    - 각 요청은 독립적이며, 필요한 정보는 요청에 모두 포함해야 합니다.
-  
+
+예: 요청 시 인증 토큰 함께 전송
 ```http
 GET /users/1 HTTP/1.1
 Host: api.example.com
@@ -110,7 +110,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
    - 클라이언트와 서버의 역할을 명확히 분리하여 확장성과 유지보수성을 향상합니다.
    - 클라이언트는 UI/사용자 경험 담당, 서버는 데이터 저장/처리를 담당합니다.
 
-서버 응답(JSON)
+서버 응답(JSON) - 데이터 담당
 ```json
 {
   "id": 1,
@@ -119,7 +119,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 }
 ```
 
-클라이언트(JavaScript에서 데이터 표시)
+클라이언트(JavaScript에서 데이터 표시) - UI 담
 ```javascript
 fetch("https://api.example.com/posts/1")
   .then(res => res.json())
@@ -168,6 +168,7 @@ Client → Load Balancer → API Gateway → Application Server → Database
    - 필요 시 서버가 클라이언트에 코드를 전송해 실행할 수 있습니다.
    - 예: 이메일 형식 검사, 비밀번호 규칙 검사 
 
+유효성 검사 예시
 ```html
 
 <input type="email" id="email" />
