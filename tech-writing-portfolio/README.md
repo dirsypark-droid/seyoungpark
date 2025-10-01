@@ -7,15 +7,11 @@ I create professional documentation in **English and Korean**, including APIs, t
 
 ---
 
-## 📖 Documentation (`docs/`)
-- [Home](./docs/index.md)
-- [About Me](./docs/about.md)
-- **Samples**
-  - [API Reference - Korean](./docs/samples/api-reference/index.md)
-  - [Quickstart Tutorial - English](./docs/samples/tutorial-quickstart/index.md)
-  - [Concept Explainer - Korean](./docs/samples/concept-explainer/index.md)
-  - [UX writing - Korean & English](./docs/samples/ux-writing/index.md)
-
+## 📖 Writing Samples (`docs/`)
+- [API Reference - Korean](./docs/samples/api-reference/index.md)
+- [Quickstart Tutorial - English](./docs/samples/tutorial-quickstart/index.md)
+- [Concept Explainer - Korean](./docs/samples/concept-explainer/index.md)
+- [UX writing - Korean & English](./docs/samples/ux-writing/index.md)
 ---
 
 ## 🖼 Assets (`assets/`)
