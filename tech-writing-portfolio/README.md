@@ -20,11 +20,7 @@ I create professional documentation in **English and Korean**, including APIs, t
 ---
 
 ## ℹ️ Repository Info
-This repository is structured as a personal **documentation portfolio**.
-
-- **Purpose**: To showcase technical writing skills through diverse documentation samples (API references, quickstart tutorials, concept explainers, etc.).
-- **Structure**: All sample docs are organized under the `docs/` directory by category.
-- **Audience**: Created for recruiters, developers, and peers to review writing style and documentation capabilities.
-- **Disclaimer**: All code and response examples are mock data and not related to any actual service.
+This repository is structured as a personal **documentation portfolio** to showcase technical writing skills through diverse documentation samples.
+Please note that all code and response examples are mock data and not related to any actual service.
 
 📫 Contact: dir.sypark@gmail.com
