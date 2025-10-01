@@ -19,8 +19,13 @@ I create professional documentation in **English and Korean**, including APIs, t
 
 ---
 
-## ℹ️ Repo Info
-This repository is structured as a **documentation portfolio**.
-Visit the [GitHub Pages site](./docs/index.md) to view it as a live website.
+## ℹ️ Repository Info
+## ℹ️ Repository Info
+This repository is structured as a personal **documentation portfolio**.
+
+- **Purpose**: To showcase technical writing skills through diverse documentation samples (API references, quickstart tutorials, concept explainers, etc.).
+- **Structure**: All sample docs are organized under the `docs/` directory by category.
+- **Audience**: Created for recruiters, developers, and peers to review writing style and documentation capabilities.
+- **Disclaimer**: All code and response examples are mock data and not related to any actual service.
 
 📫 Contact: dir.sypark@gmail.com
