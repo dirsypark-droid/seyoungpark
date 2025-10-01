@@ -40,18 +40,18 @@ REST는 다음과 같은 원칙을 따릅니다.
      - `/users/1` → ID가 1인 사용자  
      - `/orders/25` → 주문 번호 25번
     
-요청 예시(GET /users/1)
+   요청 예시(GET /users/1)
 
-```http
+   ```http
 
-GET /users/1 HTTP/1.1
-Host: api.example.com
-Accept: application/json
+   GET /users/1 HTTP/1.1
+   Host: api.example.com
+   Accept: application/json
 
-```
+   ```
 
-응답 예시(JSON)
-```json
+   응답 예시(JSON)
+   ```json
 
 {
   "id": 1,
@@ -59,7 +59,7 @@ Accept: application/json
   "email": "alice@example.com"
 }
 
-```
+   ```
 
 2. **HTTP 메서드 활용**
 
