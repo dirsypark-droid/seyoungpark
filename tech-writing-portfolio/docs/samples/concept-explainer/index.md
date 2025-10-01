@@ -205,9 +205,9 @@ REST는 다음과 같은 원칙을 따릅니다.
 
 # 참고 자료
 
+- [REST API Tutorial](https://restfulapi.net/)  
 - [AWS: API란 무엇인가?](https://aws.amazon.com/ko/what-is/api/)  
 - [YouTube: APIs Explained in 6 Minutes](https://www.youtube.com/watch?v=hltLrjabkiY)  
 - [MDN Web Docs: Introduction to APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)  
 - [Google Cloud: What is an API?](https://cloud.google.com/learn/what-is-an-api)  
-- [Microsoft Docs: What is an API?](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/api-design)  
-- [REST API Tutorial](https://restfulapi.net/)  
+- [Microsoft Docs: What is an API?](https://learn.microsoft.com/en-us/azure/architecture/microservices/design/api-design)
