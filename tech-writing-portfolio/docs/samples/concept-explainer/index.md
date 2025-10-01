@@ -183,16 +183,6 @@ REST는 다음과 같은 원칙을 따릅니다.
    </script>
    ```
 
-## REST API 사용 예시
-- **GET /products**  
-  → 모든 상품 목록을 가져오기  
-- **POST /products**  
-  → 새로운 상품 추가하기  
-- **GET /products/123**  
-  → ID 123번 상품 정보 조회하기  
-- **DELETE /products/123**  
-  → ID 123번 상품 삭제하기
-
 ## API vs. REST API
 
 | 구분 | API | REST API |
