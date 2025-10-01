@@ -3,7 +3,7 @@
 Base URL: `https://tech-writer-syp.com/v1`
 
 ---
-# Quick Navigation
+# Table of Contents
 
 - [Overview](#overview)
 - [Common Conventions](#common-conventions)
@@ -15,39 +15,32 @@ Base URL: `https://tech-writer-syp.com/v1`
   - [Endpoint](#endpoint)
   - [Request](#request)
   - [Response](#response)
-    - [201 Created](#201-created상품-등록-성공)
-    - [400 Bad Request](#400-bad-request검증-실패)
-    - [409 Conflict](#409-conflict멱등성-충돌중복-생성-방지)
+    - [201 Created (상품 등록 성공)](#201-created상품-등록-성공)
+    - [400 Bad Request (검증 실패)](#400-bad-request검증-실패)
+    - [409 Conflict (멱등성 충돌중복-생성-방지)](#409-conflict멱등성-충돌중복-생성-방지)
 - [상품 카테고리 조회 API](#상품-카테고리-조회-api)
   - [Endpoint](#endpoint-1)
   - [Request](#request-1)
   - [Response](#response-1)
-    - [200 OK](#200-ok상품-조회-성공)
-    - [200 Partial Success](#200-partial-success부분-성공)
-    - [400 Base Request](#400-base-request검증-실패중복)
-- [기타 에러 객체](#기타-에러-객체)
-  - [필수 누락](#필수-누락)
-  - [범위 초과](#범위-초과)
-  - [패턴 불일치](#패턴-불일치)
+    - [200 OK (상품 조회 성공)](#200-ok상품-조회-성공)
+    - [200 Partial Success (부분 성공)](#200-partial-success부분-성공)
+    - [400 Bad Request (검증 실패중복)](#400-base-request검증-실패중복)
+- [에러 객체](#에러-객체)
 
 ---
 
 # Overview
 
-Commerce Public API는 상품과 카테고리 등의 상거래 리소스를 조회/등록하기 위한 HTTP+JSON API 입니다.
+Commerce Public API는 상품과 카테고리 등의 상거래 리소스를 HTTP 프로토콜을 통해 요청·응답하며, 데이터는 JSON 형식으로 교환하는 API입니다.
 
 ---
 
 # Common Conventions 
 
 - **Time**: UTC ISO 8601 (`YYYY-MM-DDTHH:mm:ssZ`)
-
 - URIs: `format: uri` (이미지/링크 등)
-
 - Language: 기본 한국어. `Accept-Language`로 다국어 메시지 요청 가능
-
 - Idempotency: 재시도 안전을 위해 POST 시 `Idempotency-Key: <uuid>` 헤더 권장
-
 - Content Type: `application/json; charset=utf-8`
 
 ---
@@ -130,8 +123,10 @@ curl -X POST https://tech-writer-assignment.com/v1/products \
   "name": "삼다수 500ml 20개입",
   "price": 15000,
   "stock": 100,
-  "createdAt": "2025-04-28T10:15:30Z"
+  "createdAt": "2025-04-28T10:15:30Z",
+  "requestId": "req_12345678"
 }
+
 ```
 
 ### 400 Bad Request(검증 실패)
@@ -143,7 +138,7 @@ curl -X POST https://tech-writer-assignment.com/v1/products \
     "message": "\"price\"는 정수여야 합니다.",
     "field": "price",
     "expected": { "type": "integer", "minimum": 0, "maximum": 1000000000 },
-    "actual": { "type": "string" },
+    "actual": { "type": "string", "value": "15000원" },
     "requestId": "req_ab12cd34"
   }
 }
@@ -169,7 +164,7 @@ curl -X POST https://tech-writer-assignment.com/v1/products \
 
 ## Endpoint
 
-`POST` /categories/batchGet
+`POST` /categories/batchGet`
 
 ## Request
 
@@ -181,12 +176,10 @@ curl -X POST https://tech-writer-assignment.com/v1/products \
 
 ```bash
 
-curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
+curl -X POST https://tech-writer-syp.com/v1/categories/batchGet \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{
-    "catIds": [82275455, 103718011]
-  }'
+  -d '{"catIds": [82275455, 103718011]}'
 
 ```
 
@@ -199,42 +192,8 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
   "data": {
     "list": [
       {
-        "cat": {
-          "catId": 82275455,
-          "name": "들기름/참기름", // 카테고리명
-          "brandName": "농부미학", // 값이 없을 경우 null
-          "attributes": [
-            { "key": "용량", "value": "350", "unit": "ml" },
-            { "key": "개수", "value": "1", "unit": "개" }
-          ],
-          "bup": { "quantity": 100.0, "unit": "ml" }, // 단위 기준가 계산용
-          "thumbnailUrl": null,
-          "productItemGroupId": 82275455
-        },
-        "reviewStat": {
-          "totalCount": 7,
-          "averageRating": 4.3
-        },
-        "primaryItem": {
-          "itemId": 9763867,
-          "name": "들기름 350ml",
-          "thumbnailUrl": "https://shopping.syp.io/...",
-          "stock": {
-            "stockId": 2878365,
-            "price": 8900,
-            "originPrice": 18900,
-            "baseUnitPrice": 2542.857
-          },
-          "product": {
-            "productId": 267091,
-            "name": "저온압착 참·들기름 180/350ml",
-            "thumbnailUrl": "https://shopping.syp.io/...",
-            "deliveryFeeType": "CONDITIONALLY_FREE"
-          },
-          "productItemId": 9763867,
-          "price": 8900,
-          "originPrice": 18900
-        }
+        "cat": { "catId": 82275455, "name": "들기름/참기름" },
+        "primaryItem": { "itemId": 9763867, "name": "들기름 350ml" }
       }
     ]
   },
@@ -248,20 +207,13 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
 
 ```json
 {
-  "data": {
-    "list": [
-      /* 존재하는 항목들 */
-    ]
-  },
+  "data": { "list": [ /* valid categories */ ] },
   "errors": [
-    {
-      "code": "NOT_FOUND",
-      "message": "카테고리 ID가 존재하지 않습니다.",
-      "id": 55555555
-    }
+    { "code": "NOT_FOUND", "message": "카테고리 ID가 존재하지 않습니다.", "id": 55555555 }
   ],
   "requestId": "req_ba02c1e0"
 }
+
 ```
 
 ### 400 Base Request(검증 실패/중복)
@@ -278,49 +230,11 @@ curl -X POST https://tech-writer-assignment.com/v1/categories:batchGet \
 ```
 ---
 
-# 기타 에러 객체
+# 에러 객체
 
-본문에서 다룬 에러 객체 외 추가로 참고할 수 있는 에러 객체입니다.
-
-
-## 필수 누락
-
-```json
-{
-  "error": {
-    "code": "MISSING_PARAMETER",
-    "message": "\"name\" 필드는 필수입니다.",
-    "field": "name",
-    "requestId": "req_11112222"
-  }
-}
-```
-
-## 범위 초과
-
-```json
-{
-  "error": {
-    "code": "OUT_OF_RANGE",
-    "message": "\"price\"가 허용 범위를 초과했습니다.",
-    "field": "price",
-    "expected": { "minimum": 0, "maximum": 1000000000 },
-    "actual": { "value": 2000000000 },
-    "requestId": "req_33334444"
-  }
-}
-```
-
-## 패턴 불일치
-
-```json
-{
-  "error": {
-    "code": "INVALID_FORMAT",
-    "message": "\"name\"이 허용되지 않는 문자를 포함합니다.",
-    "field": "name",
-    "expected": { "pattern": "^[A-Za-z0-9 _\\-:\\.^@]+$" },
-    "requestId": "req_55556666"
-  }
-}
-```
+- **MISSING_PARAMETER** – 필수 값 누락
+- **INVALID_PARAMETER** – 타입 불일치
+- **OUT_OF_RANGE** – 허용 범위 초과
+- **DUPLICATE_ID** – 중복 값 존재
+- **NOT_FOUND** – 리소스 없음
+- **IDEMPOTENCY_CONFLICT** – 멱등 충돌
