@@ -20,7 +20,6 @@ I create professional documentation in **English and Korean**, including APIs, t
 ---
 
 ## ℹ️ Repository Info
-## ℹ️ Repository Info
 This repository is structured as a personal **documentation portfolio**.
 
 - **Purpose**: To showcase technical writing skills through diverse documentation samples (API references, quickstart tutorials, concept explainers, etc.).
