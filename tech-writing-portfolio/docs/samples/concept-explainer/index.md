@@ -53,137 +53,135 @@ REST는 다음과 같은 원칙을 따릅니다.
    응답 예시(JSON)
    ```json
 
-{
-  "id": 1,
-  "name": "Alice",
-  "email": "alice@example.com"
-}
-
+   {
+     "id": 1,
+     "name": "Alice",
+     "email": "alice@example.com"
+   }
    ```
 
 2. **HTTP 메서드 활용**
 
 - `GET` → 조회(Create)
 
-```http
-GET /orders/25 HTTP/1.1
-Host: api.example.com
-```
+   ```http
+   GET /orders/25 HTTP/1.1
+   Host: api.example.com
+   ```
    - `POST` → 생성(Read)
-```http
-POST /orders HTTP/1.1
-Host: api.example.com
-Content-Type: application/json
+   ```http
+   POST /orders HTTP/1.1
+   Host: api.example.com
+   Content-Type: application/json
 
-{
-  "productId": 123,
-  "quantity": 2
-}
-```
+   {
+     "productId": 123,
+     "quantity": 2
+   }
+   ```
    - `PUT`/`PATCH` → 수정(Update)
-```http
-PUT /orders/25 HTTP/1.1
-Host: api.example.com
-Content-Type: application/json
+   ```http
+   PUT /orders/25 HTTP/1.1
+   Host: api.example.com
+   Content-Type: application/json
 
-{
-  "quantity": 3
-}
-```
+   {
+     "quantity": 3
+   }
+   ```
    - `DELETE` → 삭제(Delete)
-```http
-DELETE /orders/25 HTTP/1.1
-Host: api.example.com
-```
+   ```http
+   DELETE /orders/25 HTTP/1.1
+   Host: api.example.com
+   ```
 
 2. **무상태성**  
    - 서버는 클라이언트의 상태(세션 등)를 저장하지 않습니다.  
    - 각 요청은 독립적이며, 필요한 정보는 요청에 모두 포함해야 합니다.
 
-예: 요청 시 인증 토큰 함께 전송
-```http
-GET /users/1 HTTP/1.1
-Host: api.example.com
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-```
+   예: 요청 시 인증 토큰 함께 전송
+   ```http
+   GET /users/1 HTTP/1.1
+   Host: api.example.com
+   Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+   ```
 
 3. **클라이언트-서버 구조**
    - 클라이언트와 서버의 역할을 명확히 분리하여 확장성과 유지보수성을 향상합니다.
    - 클라이언트는 UI/사용자 경험 담당, 서버는 데이터 저장/처리를 담당합니다.
 
-서버 응답(JSON) - 데이터 담당
-```json
-{
-  "id": 1,
-  "title": "REST API란?",
-  "content": "리소스 중심 아키텍처 스타일입니다."
-}
-```
+   서버 응답 예시(JSON) - 데이터 담당
+   ```json
+   {
+     "id": 1,
+     "title": "REST API란?",
+     "content": "리소스 중심 아키텍처 스타일입니다."
+   }
+   ```
 
-클라이언트(JavaScript에서 데이터 표시) - UI 담
-```javascript
-fetch("https://api.example.com/posts/1")
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("title").textContent = data.title;
-    document.getElementById("content").textContent = data.content;
-  });
-```
+   클라이언트(JavaScript에서 데이터 표시) - UI 담
+   ```javascript
+   fetch("https://api.example.com/posts/1")
+     .then(res => res.json())
+     .then(data => {
+       document.getElementById("title").textContent = data.title;
+       document.getElementById("content").textContent = data.content;
+     });
+   ```
   
 4. **캐시 가능성**
    - 서버 응답은 캐시 가능해야 하며, 캐시 가능 여부를 명시해야 하며, 이를 통해 성능을 개선하고 네트워크 트래픽 감소 효과를 얻습니다.
    - 예: `Cache-Control` 헤더로 응답이 캐시 가능한지, 유효기간은 언제까지인지 명시
 
-서버 응답 헤더
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Cache-Control: max-age=3600   # 1시간 동안 캐시 가능
-```
-응답 본문
-```
-{
-  "id": 123,
-  "name": "Laptop",
-  "price": 1500
-}
-```
+   서버 응답 헤더
+   ```http
+   HTTP/1.1 200 OK
+   Content-Type: application/json
+   Cache-Control: max-age=3600   # 1시간 동안 캐시 가능
+   ```
+   응답 본문
+   ```
+   {
+     "id": 123,
+     "name": "Laptop",
+     "price": 1500
+   }
+   ```
 
-> **참고**: 캐시(Cache)란 한 번 가져운 데이터를 잠시 저장해 두었다가, 같은 요청이 또 들어오면 다시 서버를 거치지 않고 저장한 데이터를 재사용하는 것을 말합니다.
+   > **참고**: 캐시(Cache)란 한 번 가져운 데이터를 잠시 저장해 두었다가, 같은 요청이 또 들어오면 다시 서버를 거치지 않고 저장한 데이터를 재사용하는 것을 말합니다.
 
 6. **계층화 시스템**
    - 서버는 여러 계층(로드밸런서, 프록시, 게이트웨이 등)으로 구성될 수 있으며, 클라이언트는 중간 계층의 존재를 알 필요가 없습니다.
    - 보안, 로드 분산, 정책 관리 등을 계층에서 처리할 수 있습니다.
 
-클라이언트 요청
-```http
-GET /products/123 HTTP/1.1
-Host: api.example.com
-```
-예시 경로
-```pgsql
-Client → Load Balancer → API Gateway → Application Server → Database
-```
+   클라이언트 요청
+   ```http
+   GET /products/123 HTTP/1.1
+   Host: api.example.com
+   ```
+   예시 경로
+   ```pgsql
+   Client → Load Balancer → API Gateway → Application Server → Database
+   ```
 
 7. **코드 온 디맨드(선택적)**
    - 필요 시 서버가 클라이언트에 코드를 전송해 실행할 수 있습니다.
    - 예: 이메일 형식 검사, 비밀번호 규칙 검사 
 
-유효성 검사 예시
-```html
+   유효성 검사 예시
+   ```html
 
-<input type="email" id="email" />
-<script>
-  function validateEmail() {
-    const email = document.getElementById("email").value;
-    if (!email.includes("@")) {
-      alert("유효한 이메일을 입력하세요");
-    }
-  }
-  document.getElementById("email").addEventListener("blur", validateEmail);
-</script>
-
-```
+   <input type="email" id="email" />
+   <script>
+     function validateEmail() {
+       const email = document.getElementById("email").value;
+       if (!email.includes("@")) {
+         alert("유효한 이메일을 입력하세요");
+       }
+     }
+     document.getElementById("email").addEventListener("blur", validateEmail);
+   </script>
+   ```
 
 ## REST API 사용 예시
 - **GET /products**  
