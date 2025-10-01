@@ -1,6 +1,4 @@
-# Commerce Public API v1
-
-Base URL: `https://tech-writer-syp.com/v1`
+# Commerce Public API v1.1
 
 ---
 # Table of Contents
@@ -32,6 +30,8 @@ Base URL: `https://tech-writer-syp.com/v1`
 # Overview
 
 Commerce Public API는 상품과 카테고리 등의 상거래 리소스를 HTTP 프로토콜을 통해 요청·응답하며, 데이터는 JSON 형식으로 교환하는 API입니다.
+
+> ⚠️ 요청·응답 예시는 직접 작성한 샘플 데이터이며, 실제 서비스 API와 무관합니다.
 
 ---
 
