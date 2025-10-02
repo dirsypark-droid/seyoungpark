@@ -117,13 +117,13 @@ REST는 다음과 같은 원칙을 따릅니다.
 
 - `DELETE` → 삭제(Delete)
 
-   요청 예시: 사용자 삭제
+   요청 예시: 사용자 삭제<br>
       ```http
       DELETE /users/1 HTTP/1.1
       Host: api.example.com
       ```
 
-   응답 예시
+   응답 예시<br>
       ```
       {
         "message": "사용자 1번이 삭제되었습니다.",
