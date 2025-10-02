@@ -114,25 +114,27 @@ REST는 다음과 같은 원칙을 따릅니다.
         "email": "alice.kim@example.com",
         "updatedAt": "2025-10-02T11:00:00Z"
       }
-      ```
+   ```
 
 - `DELETE` → 삭제(Delete)
 
-   요청 예시: 사용자 삭제
-   
-      ```http
-      DELETE /users/1 HTTP/1.1
-      Host: api.example.com
-      ```
+  요청 예시: 사용자 삭제
 
-   응답 예시
+  ```http
+  
+  DELETE /users/1 HTTP/1.1
+  Host: api.example.com
+  
+  ```
+
+  응답 예시
    
-      ```
-      {
-        "message": "사용자 1번이 삭제되었습니다.",
-        "requestId": "req_ab12cd34"
-      }
-      ```
+  ```json
+  {
+  "message": "사용자 1번이 삭제되었습니다.",
+  "requestId": "req_ab12cd34"
+  }
+  ```
 
 3. **무상태성**
 - 서버는 클라이언트 상태(세션 등)를 저장하지 않습니다.
