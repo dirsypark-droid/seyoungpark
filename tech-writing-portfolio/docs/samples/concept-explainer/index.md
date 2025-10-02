@@ -62,13 +62,14 @@ REST는 다음과 같은 원칙을 따릅니다.
 
 - `GET` → 조회(Create)
 
+   요청 예시: 주문 리소스 조회 요청(GET /orders/25)
    ```http
    GET /orders/25 HTTP/1.1
    Host: api.example.com
    ```
    - `POST` → 생성(Rea을, 서버는 데이터 저장/처리를 담당합니다.
 
-   서버 응답 예시(JSON) - 데이터 담당
+   응답 예시: 게시글 생성 응답(JSON)
    ```json
    {
      "id": 1,
@@ -81,18 +82,19 @@ REST는 다음과 같은 원칙을 따릅니다.
    - 서버는 클라이언트 상태(세션 등)를 저장하지 않습니다.
    - 각 요청은 독립적이며, 필요한 모든 정보(인증 토큰, 파라미터 등)는 요청에 포함해야 합니다.
 
+   요청 예시: JWT 토큰을 포함한 사용자 리소스 조회 요청
    ```http
    GET /users/1 HTTP/1.1
    Host: api.example.com
    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
    ```
   
-4.  **클라이언트-서버 구조**
+3.  **클라이언트-서버 구조**
    - 클라이언트와 서버의 역할을 명확히 분리합니다.
    - 클라이언트는 UI/사용자 경험을, 서버는 데이터 저장·처리를 담당합니다.
    - 이를 통해 **확장성(Scalability)**과 **유지보수성(Maintainability)**을 개선합니다.
 
-   서버 응답 예시(JSON)
+   서버 응답 예시: 게시글 리소스 응답(JSON)
    ```json
    {
   "id": 1,
@@ -101,7 +103,7 @@ REST는 다음과 같은 원칙을 따릅니다.
    }
    ```
 
-   클라이언트 요청 예시(JavaScript에서 데이터 표시)
+   클라이언트 요청 예시: JavaScript Fetch API를 통한 게시글 표시
    ```javascript
    fetch("https://api.example.com/posts/1")
   .then(res => res.json())
@@ -115,13 +117,13 @@ REST는 다음과 같은 원칙을 따릅니다.
    - 서버 응답은 캐시 가능해야 하고, 캐시 가능 여부를 명시해야 하며, 이를 통해 성능을 개선하고 네트워크 트래픽 감소 효과를 얻습니다.
    - 예: `Cache-Control` 헤더로 응답이 캐시 가능한지, 유효기간은 언제까지인지 명시
 
-   서버 응답 헤더
+   서버 응답 헤더: Cache-Control 헤더가 포함된 응답
    ```http
    HTTP/1.1 200 OK
    Content-Type: application/json
    Cache-Control: max-age=3600   # 1시간 동안 캐시 가능
    ```
-   응답 본문
+   응답 본문: 상품 리소스 응답(JSON)
    ```
    {
      "id": 123,
