@@ -19,7 +19,7 @@ API(Application Programming Interface)는 애플리케이션(프로그램)끼리
 
 ## 개요
 
-REST API는 API 중에서도 **웹(HTTP) 환경에서 REST 원칙을 따르는 방식**입니다. REST는 *Representational State Transfer*의 줄임말로, 웹 리소스를 다루는 규칙을 정의합니다. 
+REST API는 API 중에서도 **웹(HTTP) 환경에서 REST 원칙을 따르는 방식**입니다. REST는 *Representational State Transfer*의 줄임말로, 웹 리소스를 다루는 규칙을 뜻합니다.
 
 예를 들어, 사용자가 **스마트폰 앱에서 '주문 내역'을 탭하면**, 앱은 서버에 주문 내역에 대한 요청(request)을 보냅니다. 서버는 다시 응답(response)으로 주문 내역을 전달합니다. 이 때 앱과 서버가 같은 규칙으로 대화하는 방식이 바로 REST API입니다.
 
