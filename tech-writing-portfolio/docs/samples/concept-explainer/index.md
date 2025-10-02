@@ -60,21 +60,74 @@ REST는 다음과 같은 원칙을 따릅니다.
 
 2. **HTTP 메서드 활용**
 
-- `GET` → 조회(Create)
+- HTTP 메서드를 활용하여 리소스에 대한 CRUD 작업을 표현합니다.
+
+- `GET` → 조회(Read)
 
    요청 예시: 주문 리소스 조회 요청(GET /orders/25)
    ```http
    GET /orders/25 HTTP/1.1
    Host: api.example.com
    ```
-   - `POST` → 생성(Rea을, 서버는 데이터 저장/처리를 담당합니다.
+- `POST` → 생성(Create)
 
-   응답 예시: 게시글 생성 응답(JSON)
+   요청 예시: 게시글 생성 
+   ```http
+   POST /posts HTTP/1.1
+   Host: api.example.com
+   Content-Type: application/json
+
+   {
+     "title": "REST API란?",
+     "content": "리소스 중심 아키텍처 스타일입니다."
+   }
+   ```
+
+   응답 예시: 게시글 생성 응답
    ```json
    {
      "id": 1,
      "title": "REST API란?",
      "content": "리소스 중심 아키텍처 스타일입니다."
+   }
+   ```
+
+- `PUT`/`PATCH` → 수정(Update)
+
+요청 예시: 사용자 정보 전체 수정
+   ```http
+   PUT /users/1 HTTP/1.1
+   Host: api.example.com
+   Content-Type: application/json
+
+   {
+     "name": "Alice Kim",
+     "email": "alice.kim@example.com"
+   }
+```
+응답 예시
+```json
+   {
+     "id": 1,
+     "name": "Alice Kim",
+     "email": "alice.kim@example.com",
+     "updatedAt": "2025-10-02T11:00:00Z"
+   }
+   ```
+
+- `DELETE` → 삭제(Delete)
+
+요청 예시: 사용자 삭제
+   ```http
+   DELETE /users/1 HTTP/1.1
+   Host: api.example.com
+   ```
+
+응답 예시
+   ```
+   {
+     "message": "사용자 1번이 삭제되었습니다.",
+     "requestId": "req_ab12cd34"
    }
    ```
 
