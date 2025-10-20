@@ -37,8 +37,8 @@ Commerce Public API는 상품과 카테고리 등의 상거래 리소스를 HTTP
 
 # Common Conventions 
 
-- **Time**: UTC ISO 8601 (`YYYY-MM-DDTHH:mm:ssZ`)
-- URIs: `format: uri` (이미지/링크 등)
+- **Time**: UTC ISO 8601(`YYYY-MM-DDTHH:mm:ssZ`)
+- URIs: `format: uri`(이미지/링크 등)
 - Language: 기본 한국어. `Accept-Language`로 다국어 메시지 요청 가능
 - Idempotency: 재시도 안전을 위해 POST 시 `Idempotency-Key: <uuid>` 헤더 권장
 - Content Type: `application/json; charset=utf-8`
@@ -46,8 +46,8 @@ Commerce Public API는 상품과 카테고리 등의 상거래 리소스를 HTTP
 ---
 
 # Validation Rules
-- **name**: 1–255, 정규식 `^[A-Za-z0-9 _\-:\.^@]+$` (공백 허용), 허용문자 외 금지
-- **price/stock**: 정수, 0–1,000,000,000 (0이면 품절)
+- **name**: 1–255, 정규식 `^[A-Za-z0-9 _\-:\.^@]+$`(공백 허용), 허용문자 외 금지
+- **price/stock**: 정수, 0–1,000,000,000(0이면 품절)
 - **description**: 1–2,000(선택)
 - **thumbnailUrl**: `format: uri`, nullable
 - **createdAt**: ISO 8601(UTC, `Z`)
