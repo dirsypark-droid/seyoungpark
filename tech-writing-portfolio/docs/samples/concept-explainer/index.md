@@ -15,7 +15,6 @@ API(Application Programming Interface)는 애플리케이션(프로그램)끼리
 
 # REST API란?
 
-![REST API](../../assets/rest-api.jpg)
 
 ## 개요
 
