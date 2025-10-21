@@ -1,6 +1,6 @@
 # Hi, I'm Seyoung Park – Bilingual technical writer and translator (Korean ↔ English)
 
-- [Resume in Korean]()
+- [Resume in Korean](https://github.com/dirsypark-droid/seyoungpark/blob/main/profile)
 - 4+ years of experience documenting enterprise SaaS, cloud, and platform solutions. 
 - Skilled in transforming complex technical concepts into clear, actionable user content. 
 - Experienced in UI/UX writing, developer documentation, and content localization across cloud, AI, and DevOps environments. 
