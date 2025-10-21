@@ -1,9 +1,17 @@
-# Hi, I'm Seyoung Park – Technical Writer
+# Hi, I'm Seyoung Park – Bilingual technical writer and translator (Korean ↔ English)
+
+- 4+ years of experience documenting enterprise SaaS, cloud, and platform solutions. 
+- Skilled in transforming complex technical concepts into clear, actionable user content. 
+- Experienced in UI/UX writing, developer documentation, and content localization across cloud, AI, and DevOps environments. 
+- Adept at collaborating with developers, PMs, and designers in Agile workflows using Confluence, Git, and Markdown-based documentation systems.
 
 # 📚 Tech Writing Portfolio
 
-Welcome to my technical writing portfolio.  
-I create professional documentation in **English and Korean**, including APIs, tutorials, and explainers.
+Welcome to my technical writing portfolio.
+
+I create documentation that helps users understand, trust, and enjoy technology.
+In this portfolio, you’ll find samples that illustrate how I approach complex technical topics—from API references to UX microcopy—with precision and empathy for the reader.
+My goal as a technical writer is to bridge the gap between product and user, ensuring that every piece of documentation contributes to a seamless experience.
 
 ---
 
