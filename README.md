@@ -1,7 +1,5 @@
 # 🌐 Hi, I'm **Seyoung Park** — Bilingual UX & Technical Writer (Korean ↔ English)
 
-💡 *I turn complex technology into content that users can understand, trust, and enjoy.*
-
 ---
 
 ## 🧭 About Me
@@ -25,7 +23,7 @@ My goal as a writer is to **bridge the gap between product and user**, ensuring 
 
 | Category | Language | Description | Link |
 |-----------|-----------|-------------|------|
-| **UX Writing** | 🇰🇷 / 🇺🇸 | Interface copy & micro-interactions for multilingual users | [View sample](./docs/ux-writing.md) |
+| **UX Writing** | 🇰🇷 / 🇺🇸 | Interface copy & micro-interactions for multilingual users | [View sample]([./docs/ux-writing.md](https://github.com/dirsypark-droid/seyoungpark/tree/main/tech-writing-portfolio/docs/samples/ux-writing)) |
 | **API Reference** | 🇰🇷 | API endpoint documentation with request/response examples | [View sample](./docs/api-reference.md) |
 | **Quickstart Tutorial** | 🇺🇸 | Step-by-step guide for onboarding new developers | [View sample](./docs/quickstart-tutorial.md) |
 | **Concept Explainer** | 🇰🇷 | High-level explanation of platform architecture & core concepts | [View sample](./docs/concept-explainer.md) |
