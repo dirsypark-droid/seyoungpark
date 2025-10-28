@@ -1,25 +1,54 @@
-# Hi, I'm Seyoung Park – Bilingual UX/technical writer (Korean ↔ English)
+# 🌐 Hi, I'm **Seyoung Park** — Bilingual UX & Technical Writer (Korean ↔ English)
 
-- 4+ years of experience documenting enterprise SaaS and platform solutions.
-- Experienced in UI/UX writing, developer documentation, and content localization across cloud, AI, and DevOps environments.
-- Skilled in transforming complex technical concepts into clear, actionable user content.
-- Adept at collaborating with developers, PMs, and designers in Agile workflows using Confluence, Git, and Markdown-based documentation systems.
+💡 *I turn complex technology into content that users can understand, trust, and enjoy.*
 
-# Writing Portfolio
-Welcome to my UX/technical writing portfolio.
+---
 
-I create documentation that helps users understand, trust, and enjoy technology. In this portfolio, you’ll find samples that illustrate how I approach complex technical topics—from API references to UX microcopy—with precision and empathy for the reader. My goal as a writer is to bridge the gap between product and user, ensuring that every piece of documentation contributes to a seamless experience.
+## 🧭 About Me
 
-# Writing Samples (docs/)
-UX writing - Korean & English
-API Reference - Korean
-Quickstart Tutorial - English
-Concept Explainer - Korean
+- **4+ years** of experience documenting enterprise SaaS and platform solutions  
+- Skilled in **UI/UX writing**, **developer documentation**, and **content localization** across **cloud**, **AI**, and **DevOps** domains  
+- Adept at collaborating with developers, PMs, and designers in **Agile** environments  
+- Proficient with **Confluence**, **Git**, and **Markdown-based** documentation systems  
 
-# Assets (assets/)
-Images folder – supporting diagrams, screenshots, and visuals used in docs.
+---
 
-ℹ️ Repository Info
-This repository is structured as a personal documentation portfolio to showcase technical writing skills through diverse documentation samples. Please note that all code and response examples are mock data and not related to any actual service.
+## 🖋️ Writing Portfolio
 
-📫 Contact: seyoungwrites@gmail.com
+Welcome to my **UX/technical writing portfolio**.  
+Here you’ll find samples that showcase how I approach technical topics — from API references to UX microcopy — with clarity, empathy, and precision.  
+My goal as a writer is to **bridge the gap between product and user**, ensuring that every piece of documentation contributes to a seamless experience.
+
+---
+
+## 📚 Writing Samples (`/docs`)
+
+| Category | Language | Description | Link |
+|-----------|-----------|-------------|------|
+| **UX Writing** | 🇰🇷 / 🇺🇸 | Interface copy & micro-interactions for multilingual users | [View sample](./docs/ux-writing.md) |
+| **API Reference** | 🇰🇷 | API endpoint documentation with request/response examples | [View sample](./docs/api-reference.md) |
+| **Quickstart Tutorial** | 🇺🇸 | Step-by-step guide for onboarding new developers | [View sample](./docs/quickstart-tutorial.md) |
+| **Concept Explainer** | 🇰🇷 | High-level explanation of platform architecture & core concepts | [View sample](./docs/concept-explainer.md) |
+
+---
+
+## 🖼️ Assets (`/assets`)
+
+Supporting **diagrams**, **screenshots**, and **visuals** used in documentation can be found in the `/assets` folder.  
+These materials complement the written samples by providing visual clarity.
+
+---
+
+## ℹ️ Repository Info
+
+This repository serves as a **personal documentation portfolio**, demonstrating my range as a UX/technical writer.
+
+---
+
+## 📫 Contact
+
+📧 **seyoungwrites@gmail.com**
+
+---
+
+> ✨ *"Good documentation doesn’t just explain how a product works — it makes users feel confident using it."*
