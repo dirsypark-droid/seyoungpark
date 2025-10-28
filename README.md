@@ -23,7 +23,7 @@ My goal as a writer is to **bridge the gap between product and user**, ensuring 
 
 | Category | Language | Description | Link |
 |-----------|-----------|-------------|------|
-| **UX Writing** | 🇰🇷 / 🇺🇸 | Interface copy & micro-interactions for multilingual users | [View sample](.docs/samples/ux-writing/index.md) |
+| **UX Writing** | 🇰🇷 / 🇺🇸 | Interface copy & micro-interactions for multilingual users | [View sample](/docs/samples/ux-writing/index.md) |
 | **API Reference** | 🇰🇷 | API endpoint documentation with request/response examples | [View sample](./docs/api-reference.md) |
 | **Quickstart Tutorial** | 🇺🇸 | Step-by-step guide for onboarding new developers | [View sample](./docs/quickstart-tutorial.md) |
 | **Concept Explainer** | 🇰🇷 | High-level explanation of platform architecture & core concepts | [View sample](./docs/concept-explainer.md) |
