@@ -5,7 +5,7 @@
 - Skilled in transforming complex technical concepts into clear, actionable user content.
 - Adept at collaborating with developers, PMs, and designers in Agile workflows using Confluence, Git, and Markdown-based documentation systems.
 
-# 📚 Tech Writing Portfolio
+# 📚 Writing Portfolio
 
 Welcome to my UX/technical writing portfolio.
 
