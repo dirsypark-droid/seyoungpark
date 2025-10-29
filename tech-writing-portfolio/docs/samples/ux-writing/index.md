@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/542675c0-3f2b-4b85-83c2-af61cc71d52b" /># UX Writing Samples
+# UX Writing Samples
 
 ## OTT 결제 대기 화면 UX Writing 사례
 
@@ -8,7 +8,7 @@
 
 ### Before vs. After
 
-![](../../assets/OTT-payment)
+![](../../assets/OTT-payment.png)
 
 ### Before - UX 이슈
 
@@ -100,6 +100,7 @@
 - **신뢰성**: 불필요한 수식어 없이 데이터 중심 전달
 - **효율성**: 짧은 레이블로 빠르게 이해 가능
 - **전문성**: B2B SaaS 서비스에 맞는 중립적이고 전문적인 문체
+
 
 
 
