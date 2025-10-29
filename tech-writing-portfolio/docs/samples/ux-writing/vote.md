@@ -27,7 +27,7 @@
 | 언어 톤   | 따뜻하고 유쾌하며 직관적                                                 |
 | 감정 목표  | 설렘과 소속감                                                       |
 | 언어 예시  | “Show your love!”, “Let’s cheer together!”, "One vote, all the love 💕" |
-| 특징 | • 짧고 리듬감 있는 문장 구성<br>• 감정 표현에 이모지 적극 활용 💖🎵<br>• 직접적 행동 유도(“Vote now!” “Join the fun!”)<br>• 명령보다는 초대의 어조로 전달 (“Let’s…” “Come join…”) |
+| 특징 | • 짧고 리듬감 있는 문장 구성<br>• 감정 표현에 이모지 적극 활용 💖🎵<br>• 직접적 행동 유도(“Vote now!”)<br>• 명령보다는 초대의 어조로 전달 (“Let’s…” “Come join…”) |
 
 
 <br>
