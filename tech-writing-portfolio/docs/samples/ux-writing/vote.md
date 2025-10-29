@@ -5,7 +5,7 @@
 
 ## Before vs. After
 ![](../../assets/vote.png)
-![](../../assets/vote-eng.png)
+![](../../assets/vote-eng1.png)
 
 ## Before - UX 이슈
 - 단조로운 명령형 표현 (“Vote”)으로 참여 유도력이 낮음
@@ -13,7 +13,7 @@
 - 행동 유도 대신 정보 전달에 그침, 클릭 동기 약화  
 
 ## After - UX 개선 사항
-- “Vote for your favorite now! 🎵”로 팬의 감정에 공감하는 표현 사용
+- 팬들의 감정에 공감하는 표현 사용
 - 🎵 이모지로 밝고 즐거운 분위기 강화
 - 문장형 카피로 행동 촉진 및 친근한 어조 확보
 - 글로벌 사용자에게 통하는 밝고 긍정적인 톤앤매너 정착
