@@ -4,7 +4,7 @@
 - 기존의 행정적인 규정 중심 문장을 브랜드 톤에 맞는 감성적·유도형 어조로 전환함  
 
 ## Before vs. After
-![](../../assets/vote-description.png)
+![](../../assets/vote-des.png)
 
 ## Before - UX 이슈
 - “You must…”로 시작하는 명령형 문장이 사용자에게 부담감 부여  
