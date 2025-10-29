@@ -1,7 +1,7 @@
 # 글로벌 OTT 서비스 결제 대기 화면 UX Writing 사례
 
 ## Context
-- 글로벌 OTT 서비스의 결제 대기 화면도 콘텐츠 경험의 일부로 느낄 수 있도록 UX 문구를 개선함
+- 글로벌 OTT 서비스의 사용자가 결제 대기 화면에서도 긍정적인 콘텐츠 경험을 할 수 있도록 UX 문구를 개선함
 
 ## Before vs. After
 ![](../../assets/OTT-payment.png)
