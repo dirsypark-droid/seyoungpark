@@ -2,10 +2,11 @@
 
 아래는 **사용자의 서비스 경험과 사용성을 고려한 UX Writing 사례**입니다.
 
-1. [OTT 결제 대기 화면 UX Writing 사례](./ott-payment.md)
-2. [글로벌 엔터테인먼트플랫폼 UX Writing 사례](./vote.md) 
+1. [OTT 결제 대기 화면 개선 사례](./ott-payment.md)
+2. [글로벌 엔터테인먼트플랫폼 투표 화면 개선 사례](./vote.md) 
 3. [클라우드 계정 등록 화면 개선 사례](./cloud-account.md)
 4. [B2B 결제 플랫폼 계정 확인 화면 개선 사례](./b2b-payment.md)
 5. [클라우드 관리 대시보드 UX Writing 사례](./cloud-dashboard.md)
+
 
 
