@@ -4,10 +4,12 @@
 
 ## 🧭 About Me
 
+[Professional Experience Summary in Korean](./profile.md)
+
 - **4+ years** of experience documenting enterprise SaaS and platform solutions  
 - Skilled in **UI/UX writing**, **developer documentation**, and **content localization** across **cloud**, **AI**, and **DevOps** domains  
 - Adept at collaborating with developers, PMs, and designers in **Agile** environments  
-- Proficient with **Confluence**, **Git**, and **Markdown-based** documentation systems  
+- Proficient with **Confluence**, **Git**, and **Markdown-based** documentation systems
 
 ---
 
