@@ -41,7 +41,7 @@ These materials complement the written samples by providing visual clarity.
 
 ## ℹ️ Repository Info
 
-This repository serves as a **personal documentation portfolio**, demonstrating my range as a UX/technical writer.
+This repository serves as a **personal documentation portfolio**, demonstrating my range as a technical writer.
 
 ---
 
